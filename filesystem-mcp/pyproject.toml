@@ -1,0 +1,16 @@
+[project]
+name = "filesystem-mcp"
+version = "1.0.0"
+description = "A simple MCP server exposing filesystem tools to LLMs"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp[cli]>=1.0.0",
+    "pydantic>=2.0",
+]
+
+[project.scripts]
+filesystem-mcp = "server:mcp"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
